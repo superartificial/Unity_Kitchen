@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f899cb027412b4382d959dfe6c7487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProgressBarUI
+  hasProgressGameObject: {fileID: 0}
   barImage: {fileID: 4574060624923837242}
 --- !u!114 &7872436112078718104
 MonoBehaviour:

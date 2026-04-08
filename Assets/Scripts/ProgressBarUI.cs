@@ -10,6 +10,10 @@ public class ProgressBarUI : MonoBehaviour
 
     private void Start() {
         hasProgress = hasProgressGameObject.GetComponent<IHasProgress>();
+        if (hasProgress == null) {
+            Debug.LogError($"{hasProgressGameObject.name} does not implement IHasProgress", hasProgressGameObject);
+            return;
+        }
         hasProgress.OnProgressChange += HasProgress_OnProgressChanged;
         barImage.fillAmount = 0f;
         Hide();
