@@ -20,7 +20,6 @@ public class KitchenObject : MonoBehaviour
         {
             Debug.LogError("Counter already has KO");
         }
-        
         kitchenObjectParent.setKitchenObject(this);
         transform.parent = kitchenObjectParent.GetKitchenObjectFollowTransform();
         transform.localPosition = Vector3.zero;
@@ -35,8 +34,19 @@ public class KitchenObject : MonoBehaviour
     public static KitchenObject SpawnKitchenObject(KitchenObjectSO kitchenObjectSO, IKitchenObjectParent kitchenObjectParent) {
         Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab);
         KitchenObject kitchenObject = kitchenObjectTransform.GetComponent<KitchenObject>();
-         kitchenObject.setKitchenObjectParent(kitchenObjectParent);
+        kitchenObject.setKitchenObjectParent(kitchenObjectParent);
         return kitchenObject;
+    }
+
+    public bool TryGetPlate(out PlateKitchenObject plateKitchenObject) {
+        if (this is PlateKitchenObject) {
+            plateKitchenObject = this as PlateKitchenObject;
+            return true;
+        } else {
+            plateKitchenObject = null;
+            return false;
+        }
+        
     }
     
     

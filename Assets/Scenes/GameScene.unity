@@ -1737,6 +1737,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9801b769ac604409fd012b2cff2565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameInput
+--- !u!1001 &1423301815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.755807
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000006556511
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6796826
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70710665
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862067006953090742, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964701635444378432, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
+      propertyPath: m_Name
+      value: PlatesCounter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d55fb1507bc7894f98062211b70916f, type: 3}
 --- !u!1001 &1437839121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2138,3 +2195,4 @@ SceneRoots:
   - {fileID: 1063162204}
   - {fileID: 220008156}
   - {fileID: 1312785580}
+  - {fileID: 1423301815}
