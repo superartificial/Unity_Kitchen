@@ -13,6 +13,10 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent
 
         Debug.Log("INTERACT BASE");
     }
+    
+    public static void ResetStaticData() {
+        OnAnyObjectPlacedHere =  null;
+    }
 
     public virtual void InteractAlternate(Player player) {
     }

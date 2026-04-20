@@ -11,6 +11,10 @@ public class CuttingCounter : BaseCounter, IHasProgress
     
     [SerializeField] private CuttingRecipeSO[] cuttingRecipeSOArray;
     private int cuttingProgress;
+
+    public new static void ResetStaticData() {
+        OnAnyCut =  null;
+    }
     
     public override void Interact(Player player) {
         if (!HasKitchenObject())
@@ -54,6 +58,7 @@ public class CuttingCounter : BaseCounter, IHasProgress
         {
             cuttingProgress++;
             OnCut?.Invoke(this, EventArgs.Empty);
+             // Debug.Log(OnAnyCut.GetInvocationList().Length);
             OnAnyCut?.Invoke(this, EventArgs.Empty);
             
             CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(GetKitchenObject().getKitchenObjectSO());                    

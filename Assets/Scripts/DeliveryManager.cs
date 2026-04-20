@@ -15,6 +15,7 @@ public class DeliveryManager : MonoBehaviour {
     private float spawnRecipeTimer;
     private float spawnRecipeTimerMax = 4f;
     private int waitingRecipesMax = 4;
+    private int successfulRecipesAmount;
 
     // Singleton pattern
     public static DeliveryManager Instance { get; private set; }
@@ -58,6 +59,7 @@ public class DeliveryManager : MonoBehaviour {
 
                 if (plateContentsMatchesRecipe) {
                     // player delivered correct recipe
+                    successfulRecipesAmount++;
                     OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
                     OnRecipeSuccess?.Invoke(this, EventArgs.Empty);
                     Debug.Log("player delivered correct recipe");
@@ -75,4 +77,7 @@ public class DeliveryManager : MonoBehaviour {
     public List<RecipeSO> GetWaitingRecipeSOList() {
         return waitingRecipeSOList;
     }
+
+    public int GetSuccessfulRecipesAmount() => successfulRecipesAmount;
+
 }

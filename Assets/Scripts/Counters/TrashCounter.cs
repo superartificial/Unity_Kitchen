@@ -12,4 +12,9 @@ public class TrashCounter : BaseCounter {
             OnAnyObjectTrashed?.Invoke(this, EventArgs.Empty);
         }
     }
+    
+    public new static void ResetStaticData() {
+        OnAnyObjectTrashed =  null;
+    }
+    
 }
